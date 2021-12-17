@@ -5,7 +5,7 @@ from geometry_msgs.msg import Twist
 
 def move():
     #create a new publisher. we specify the topic name, then type of message then the queue size
-    pub = rospy.Publisher('/turtle1/cmd_vel', String, queue_size=10)
+    pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
     #we need to initialize the node
     # In ROS, nodes are uniquely named. If two nodes with the same
     # node are launched, the previous one is kicked off. The
